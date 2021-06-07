@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User should authenticate 1`] = `
+Object {
+  "data": Object {
+    "authenticate": Object {
+      "_id": "60be9f1da5a6f413780d8ea4",
+      "name": "Test name",
+      "token": "$2b$10$elVSdQ0yDyo4x8mv.7iLneP5Bt4amZ8.FSefFHTdf9RjrlYWViZE.",
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`User should create an user 1`] = `
+Object {
+  "data": Object {
+    "createUser": Object {
+      "name": "Test name",
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`User should not authenticate 1`] = `
+Object {
+  "data": null,
+  "errors": Array [
+    [GraphQLError: Wrong password],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
