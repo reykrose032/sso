@@ -10,5 +10,6 @@ export default async () => {
   return new ApolloServer({
     schema,
     playground: config.isDev,
+    context: ({ req, res }) => ({ req, res })
   });
 };

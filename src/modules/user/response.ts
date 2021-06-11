@@ -11,8 +11,4 @@ export class UserResponse {
     @Field()
     @prop()
     name: string;
-
-    @Field()
-    @prop()
-    token: string;
 }

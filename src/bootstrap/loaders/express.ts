@@ -2,6 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 import helmet from "helmet";
+// import expressJwt from 'express-jwt';
 
 import { config } from "../../config";
 
@@ -14,4 +15,12 @@ export default async (app: express.Application) => {
 
   // Sets various HTTP headers to help protect our app
   app.use(helmet());
+
+  // app.use(
+  //   expressJwt({
+  //     secret: "f1BtnWgD3VKY",
+  //     algorithms: ["HS256"],
+  //     credentialsRequired: false
+  //   })
+  // );
 };
