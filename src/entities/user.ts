@@ -18,8 +18,4 @@ export class User {
   @prop()
   @Field()
   saltPassword!: string;
-
-  @prop()
-  @Field()
-  token!: string;
 }
